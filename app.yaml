@@ -1,0 +1,15 @@
+# Notice: This template has only been tested 
+# under Python27 + GAE standard environment
+application: erudite-phalanx-193815
+runtime: python27
+version: 1
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: simple_marina.app
+
+libraries:
+- name: flask
+  version: 0.12
